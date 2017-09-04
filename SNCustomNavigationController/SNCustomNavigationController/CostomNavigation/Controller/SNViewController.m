@@ -155,7 +155,22 @@
         }
 
 }
-
+-(void)addRightButtonSelectdImage:(UIImage *)selectdImage normalImage:(UIImage *)normalImage{
+        UIBarButtonItem *spaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        spaceItem.width = -15;
+        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        rightButton.frame = CGRectMake(0, 0, 44, 44);
+        [rightButton setImage:selectdImage forState:UIControlStateNormal];
+        [rightButton setImage:normalImage forState:UIControlStateSelected];
+        [rightButton addTarget:self action:@selector(rightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+        
+        if (self.tabBarController) {
+                self.tabBarController.navigationItem.rightBarButtonItem = rightItem;
+        }else{
+                self.navigationItem.rightBarButtonItem = rightItem;
+        }
+}
 
 -(void)rightButtonAction:(id)sender{
         [self resignFirstResponder];

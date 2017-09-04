@@ -29,6 +29,7 @@
 - (void)addLeftButtons:(NSArray *)images;   // 添加一上角的按钮
 - (void)addRightButton:(UIImage *)image;    // 添加右上角的按钮，需要直接调用来添加
 - (void)addRightButtons:(NSArray *)images;  // 添加右上角的按钮
+-(void)addRightButtonSelectdImage:(UIImage *)selectdImage normalImage:(UIImage *)normalImage;  //点击改变状态的右边按钮
 - (void)leftButtonAction:(id)sender;    // 左上角按钮按下之后调用此方法，默认实现了返回
 - (void)rightButtonAction:(id)sender;   // 右上角按钮按下之后调用此方法
 - (void)destroy;

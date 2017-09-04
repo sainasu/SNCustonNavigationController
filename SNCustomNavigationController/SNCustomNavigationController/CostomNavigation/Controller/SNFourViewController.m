@@ -17,27 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-        UIButton *navigationRightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        navigationRightButton.frame = CGRectMake(0, 0, 44, 44);
-        [navigationRightButton setImage:[UIImage imageNamed:@"icon_navbar_ok_blue"] forState:UIControlStateNormal];
-        [navigationRightButton setImage:[UIImage imageNamed:@"icon_navbar_close"] forState:UIControlStateSelected];
-        [navigationRightButton addTarget:self action:@selector(navigationRightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:navigationRightButton];
-        self.navigationItem.rightBarButtonItem = item;
 
-
+        [self addRightButtonSelectdImage:[UIImage imageNamed:@"icon_navbar_ok_blue"] normalImage:[UIImage imageNamed:@"icon_navbar_close"]];
 }
-
-
--(void)navigationRightButtonAction:(id)sender{
+-(void)rightButtonAction:(id)sender{
         UIButton *rightButton = (UIButton *)sender;
         if (rightButton.selected == YES) {
                 rightButton.selected = NO;
-
+                
         }else{
                 rightButton.selected = YES;
         }
+
 }
+
 
 
 
