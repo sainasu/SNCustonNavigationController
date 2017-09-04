@@ -106,6 +106,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		421067B71F5D5C87002DDD95 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4210650D1F595AAB002DDD95 /* SNCustomNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNCustomNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		421065111F595AAB002DDD95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -426,6 +439,7 @@
 				421065091F595AAB002DDD95 /* Sources */,
 				4210650A1F595AAB002DDD95 /* Frameworks */,
 				4210650B1F595AAB002DDD95 /* Resources */,
+				421067B71F5D5C87002DDD95 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -851,6 +865,7 @@
 				4210653C1F595AAB002DDD95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4210653D1F595AAB002DDD95 /* Build configuration list for PBXNativeTarget "SNCustomNavigationControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -859,6 +874,7 @@
 				4210653F1F595AAB002DDD95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		421065401F595AAB002DDD95 /* Build configuration list for PBXNativeTarget "SNCustomNavigationControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -867,6 +883,7 @@
 				421065421F595AAB002DDD95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

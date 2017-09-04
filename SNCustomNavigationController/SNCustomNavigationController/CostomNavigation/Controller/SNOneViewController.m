@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+        self.view.backgroundColor = [UIColor blackColor];
         UIButton *pushButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [pushButton setTitle:@"push" forState:UIControlStateNormal];
         pushButton.frame = CGRectMake(0, 0, 100, 50);
@@ -25,7 +27,22 @@
         [pushButton addTarget:self action:@selector(pushButtonAction) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:pushButton];
         
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+        label.textAlignment = NSTextAlignmentLeft;
+        label.numberOfLines = 0;
+        label.backgroundColor = [UIColor clearColor];
+        label.textColor = [UIColor whiteColor];
+        label.text = @"本页面： 没有设定导航栏按钮， 只有标题， 点击push按钮跳转页面。";
+        label.font = [UIFont systemFontOfSize:20];
+        CGSize size = [label sizeThatFits:CGSizeMake(label.frame.size.width, MAXFLOAT)];
+        label.frame = CGRectMake(label.frame.origin.x, label.frame.origin.y, label.frame.size.width,size.height);
+        [self.view addSubview:label];
         
+        /*
+        UITextField *texfield = [[UITextField alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 40)];
+        texfield.backgroundColor = [UIColor whiteColor];
+        [self.view addSubview:texfield];
+        */
     
 }
 -(void)pushButtonAction{

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CustomKeyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>SNCustomNavigationController.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>421065301F595AAB002DDD95</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>421067AA1F5D5C87002DDD95</key>
 		<dict>
 			<key>primary</key>
 			<true/>

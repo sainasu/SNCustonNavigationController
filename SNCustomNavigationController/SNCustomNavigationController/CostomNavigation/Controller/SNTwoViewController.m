@@ -19,7 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.icon_navbar_add
+        self.view.backgroundColor = [UIColor yellowColor];
         [self addRightButtons:@[[UIImage imageNamed:@"icon_navbar_help"],[UIImage imageNamed:@"icon_navbar_contacts"],[UIImage imageNamed:@"icon_navbar_add"]]];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+        label.textAlignment = NSTextAlignmentLeft;
+        label.numberOfLines = 0;
+        label.backgroundColor = [UIColor clearColor];
+        label.textColor = [UIColor blackColor];
+        label.text = @"本页面： 设定导航标题， 默认返回按钮， 添加了三个导航右按钮，都有跳转页面的功能，联系人是模态，其他两个是push， 按钮的tag值右到左依次为0、1、2";
+        label.font = [UIFont systemFontOfSize:20];
+        CGSize size = [label sizeThatFits:CGSizeMake(label.frame.size.width, MAXFLOAT)];
+        label.frame = CGRectMake(label.frame.origin.x, label.frame.origin.y, label.frame.size.width,size.height);
+        [self.view addSubview:label];
+
         
 }
 
