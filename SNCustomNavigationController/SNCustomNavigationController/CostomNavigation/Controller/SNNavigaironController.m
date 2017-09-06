@@ -59,6 +59,14 @@
 }
 
 #pragma mark - 重写pop方法
+
+/**
+ pop方法， push之后返回的方法
+
+ @param clazz 被push的控制器
+ @param animated 是否有动画
+ @return BOOL值
+ */
 -(BOOL)popToViewControllerClass:(Class)clazz animated:(BOOL)animated{
         UIViewController *popToViewController = nil;
         for (UIViewController *controller in self.viewControllers) {//ViewControllers 当前导航控制栈
@@ -74,6 +82,13 @@
         return NO;
 }
 
+/**
+ 模态（如果是模态，self.navigationController 调用模态方法的话， 会自动带有导航栏， 直接用self的话没有导航栏）
+
+ @param viewControllerToPresent 被模态出来的控制器
+ @param flag 是否有动画
+ @param completion 完成之后回调
+ */
 -(void)presentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion{
         if ([viewControllerToPresent isKindOfClass:[UINavigationController class]]) {
                 [super presentViewController:viewControllerToPresent animated:flag completion:completion];

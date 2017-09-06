@@ -51,9 +51,21 @@
 }
 
 #pragma mark -设置状态栏
+
+/**
+ 是否隐藏状态栏
+
+ @return 返回BOOL值
+ */
 -(BOOL)prefersStatusBarHidden{
         return self.statusBarHidden;
 }
+
+/**
+ 首选状态栏样式
+
+ @return 返回样式
+ */
 -(UIStatusBarStyle)preferredStatusBarStyle{
         return UIStatusBarStyleLightContent;
 }
@@ -155,6 +167,13 @@
         }
 
 }
+
+/**
+ 设定导航右边按钮
+
+ @param selectdImage 选择状态的图片
+ @param normalImage 未选择状态的图片
+ */
 -(void)addRightButtonSelectdImage:(UIImage *)selectdImage normalImage:(UIImage *)normalImage{
         UIBarButtonItem *spaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         spaceItem.width = -15;

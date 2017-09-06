@@ -43,8 +43,7 @@
         }else if (actionButton.tag == 1){
                 SNThreeViewController *threeVC = [SNThreeViewController new];
                 threeVC.isPush = NO;
-                SNNavigaironController *nav = [[SNNavigaironController alloc] initWithRootViewController:threeVC translucent:NO];
-                [self presentViewController:nav animated:YES completion:nil];
+                [self.navigationController presentViewController:threeVC animated:YES completion:nil];
                 
         }else if (actionButton.tag == 2){
                 SNThreeViewController *threeVC = [SNThreeViewController new];

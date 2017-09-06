@@ -498,7 +498,7 @@
 				TargetAttributes = {
 					4210650C1F595AAB002DDD95 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = SR477T7WA6;
+						DevelopmentTeam = 95A7XNALGL;
 						ProvisioningStyle = Automatic;
 					};
 					421065251F595AAB002DDD95 = {
@@ -780,7 +780,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SR477T7WA6;
+				DEVELOPMENT_TEAM = 95A7XNALGL;
 				INFOPLIST_FILE = SNCustomNavigationController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = saina.SNCustomNavigationController;
@@ -792,7 +792,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SR477T7WA6;
+				DEVELOPMENT_TEAM = 95A7XNALGL;
 				INFOPLIST_FILE = SNCustomNavigationController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = saina.SNCustomNavigationController;
